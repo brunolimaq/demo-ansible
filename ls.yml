@@ -1,0 +1,7 @@
+- name: Shell Module
+  hosts: all
+  tasks:
+
+    - name: Lista /bin
+      ansible.builtin.shell:
+        cmd: ls -ltr /bin
