@@ -1,0 +1,12 @@
+- name: Shell Module
+  hosts: all
+  tasks:
+
+    - name: Hostname
+      ansible.builtin.shell:
+        cmd: hostname
+
+    - name: Date
+      ansible.builtin.shell:
+        cmd: date
+
